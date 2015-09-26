@@ -1,1 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
+/node_modules/serve-favicon
+/node_modules/pg
+/node_modules/morgan
+/node_modules/jade
+/node_modules/express
+/node_modules/debug
+/node_modules/cookie-parser
+/node_modules/body-parser
+/node_modules/.bin
+/open-project.iml
