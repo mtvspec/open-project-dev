@@ -4,10 +4,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var pg = require('pg');
+pg.defaults = {
+  host: 'localhost',
+  port: '5432',
+  user: 'mtvspec',
+  password: 'mtvspec',
+  db: 'mtvspec'
+};
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var projects = require('projects');
+var tasks = require('tasks');
 
 var app = express();
 // view engine setup
@@ -22,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/api/projects', projects);
+app.use('/api/tasks', tasks);
 app.use('/', routes);
 app.use('/users', users);
 
