@@ -5,9 +5,14 @@
 </head>
 <body ng-app="app">
 <div ui-view></div>
-<script src="js/bower_components/angular/angular.js"></script>
-<script src="js/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-ui-router.js"></script>
+<script src="lib/socket.io/socket.io.js"></script>
 <script src="js/app.js"></script>
+<script src="js/controllers/ChatCtrl.js"></script>
+<script src='js/services/ChatModel.js'></script>
+<script src="js/controllers/LoginCtrl.js"></script>
+<script src="js/services/UserModel.js"></script>
 <script src="js/controllers/TasksCtrl.js"></script>
 <script src="js/services/TasksModel.js"></script>
 </body>
