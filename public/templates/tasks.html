@@ -1,3 +1,22 @@
-<ul>
-  <li ng-repeat="task in tasks"><span ng-bind="task.taskName"></span></li>
-</ul>
+<table>
+	<thead>
+		<tr>
+			<th>
+				Name
+			</th>
+			<th>
+				Description
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat='task in tasks'>
+			<td>
+				<span bind='task.taskName'>
+			</td>
+			<td>
+				<span bind='task.taskDescription'>
+			</td>
+		</tr>
+	</tbody>
+</table>
