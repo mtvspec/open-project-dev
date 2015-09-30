@@ -1,4 +1,4 @@
-<table>
+<table id='tasks'>
 	<thead>
 		<tr>
 			<th>
@@ -12,10 +12,10 @@
 	<tbody>
 		<tr ng-repeat='task in tasks'>
 			<td>
-				<span bind='task.taskName'>
+				<span ng-bind='task.taskName'>
 			</td>
 			<td>
-				<span bind='task.taskDescription'>
+				<span ng-bind='task.taskDescription'>
 			</td>
 		</tr>
 	</tbody>
