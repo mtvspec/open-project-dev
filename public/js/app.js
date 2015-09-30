@@ -1,26 +1,25 @@
 (function(){
-  'use strict';
+	'use strict';
 
-  angular.module('app', ['ui.router'])
-    .config(function($stateProvider, $urlRouterProvider){
-      $urlRouterProvider.otherwise('/login');
+	angular.module('app', ['ui.router'])
+	.config(function($stateProvider, $urlRouterProvider) {
 
-      $stateProvider
-        .state('login', {
-          url: '/login',
-          templateUrl: 'templates/login.html',
-          controller: 'LoginCtrl'
-        })
-        .state('main', {
-          url: '/',
+		$urlRouterProvider.otherwise('/');
+
+		$stateProvider
+		
+		.state('login', {
+			url: '/',
+			templateUrl: 'templates/login.html',
+			controller: 'LoginCtrl'
+		})
+		
+		.state('main', {
+			url: '/tasks',
 					templateUrl: 'templates/tasks.html',
 					controller: 'TasksCtrl'
-        })
-				.state('chat', {
-					url: '/chat',
-					templateUrl: 'templates/chat.html',
-					controller: 'ChatCtrl'
-				})
-								
-    });
+		})
+
+	});
+
 })();
