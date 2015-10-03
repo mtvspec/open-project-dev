@@ -4,21 +4,22 @@
 	angular.module('app', ['ui.router'])
 	.config(function($stateProvider, $urlRouterProvider) {
 
-		$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/');
 
-		$stateProvider
-		
-		.state('login', {
-			url: '/',
-			templateUrl: 'templates/login.html',
-			controller: 'LoginCtrl'
-		})
-		
-		.state('main', {
-			url: '/tasks',
-					templateUrl: 'templates/tasks.html',
-					controller: 'TasksCtrl'
-		})
+	$stateProvider
+
+	.state('login', {
+		url: '/',
+		templateUrl: 'templates/login.html',
+		controller: 'LoginCtrl'
+	})
+
+	.state('main', {
+		url: '/tasks',
+		templateUrl: 'templates/tasks.html',
+		controller: 'TasksCtrl',
+		controllerAs: 'vm'
+	})
 
 	});
 
