@@ -1,0 +1,21 @@
+<div class='modal-header'>
+	<h4 class='modal-title'>Delete user</h4>
+</div>
+<div class='modal-body'>
+	<form name='vm.userDeleteForm' class='form'>
+		<div class='form-group'>
+			<label>
+				Delete this user?
+			</label>
+			<span
+				name='fldUserName'
+				class='form-control'
+				ng-bind='vm.userToDelete.username'>
+			</span>
+		</div>
+	</form>
+</div>
+<div class='modal-footer'>
+	<button class='btn btn-primary' type='submit' ng-click='vm.submit()'>Delete user</button>
+	<button class='btn btn-default' type='button' ng-click='$dismiss()'>Cancel</button>
+</div>
