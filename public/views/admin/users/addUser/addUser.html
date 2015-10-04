@@ -1,0 +1,19 @@
+<div class='modal-header'>
+	<h4 class='modal-title'>Add user</h4>
+</div>
+<div class='modal-body'>
+	<form name='vm.userAddForm'>
+		<div class='form-group'>
+			<input
+				name='fldUserName'
+				class='form-control'
+				type='text'
+				ng-model='vm.userToAdd.username'
+				placeholder='Username'>
+		</div>
+	</form>
+</div>
+<div class='modal-footer'>
+	<button class='btn btn-primary' type='submit' ng-click='vm.submit()'>Add user</button>
+	<button class='btn btn-default' type='button' ng-click='$dismiss()'>Cancel</button>
+</div>

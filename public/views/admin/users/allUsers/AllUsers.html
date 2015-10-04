@@ -1,0 +1,34 @@
+<div class='container'>
+	<button class='btn btn-default' type='button' ng-click='vm.addUser()'>Add user</button>
+<div class='container'>
+	<table class='table table-striped table-hover table-condensed table-responsive tasks'>
+		<thead>
+			<tr>
+				<th class='username'>
+					Username
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat='user in vm.users'>
+				<td>
+					<span ng-bind='user.username'>
+				</td>
+				<td>
+					<!-- Edit user button -->
+					<button
+						 name='btnEditUser'
+						 class='btn btn-default btn-xs'
+						 type='button'
+						 ng-click='vm.editUser(user)'>Edit</button>
+ 					<!-- Delete user button -->
+ 					<button
+ 						 name='btnDeleteUser'
+ 						 class='btn btn-default btn-xs'
+ 						 type='button'
+ 						 ng-click='vm.deleteUser(user)'>Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

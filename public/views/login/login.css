@@ -1,0 +1,9 @@
+div.logInForm {
+	background-color: black;
+	padding: 20px;
+	width: 250px;
+	margin: 20px auto;
+}
+button.logIn {
+	margin: 0 auto;
+}

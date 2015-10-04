@@ -1,0 +1,27 @@
+<div class='modal-header'>
+	<h4 class='modal-title'>Edit task</h4>
+</div>
+<div class='modal-body'>
+	<form name='vm.taskEditForm'>
+		<div class='form-group'>
+			<input
+				name='fldTaskName'
+				class='form-control'
+				type='text'
+				ng-model='vm.taskToEdit.taskName'
+				placeholder='Name'>
+		</div>
+		<div class='form-group'>
+			<input
+				 name='fldTaskDescrition'
+				 class='form-control'
+				 type='text'
+				 ng-model='vm.taskToEdit.taskDescription'
+				 placeholder='Description'>
+		</div>
+	</form>
+</div>
+<div class='modal-footer'>
+	<button class='btn btn-primary' type='submit' ng-click='vm.submit()'>Save task</button>
+	<button class='btn btn-default' type='button' ng-click='$dismiss()'>Cancel</button>
+</div>

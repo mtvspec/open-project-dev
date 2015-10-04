@@ -1,0 +1,26 @@
+<div class='container logInForm'>
+	<form
+		name='vm.loginForm'
+		class='form'>
+			<div class='form-group'>
+				<input
+					class='form-control'
+					type='text'
+					placeholder='Username'
+					ng-model='vm.user.username'>
+			</div>
+			<div class='form-group'>
+				<input
+					class='form-control'
+					type='password'
+					placeholder='Password'
+					ng-model='vm.user.password'>
+			</div>
+	</form>
+	<button
+		name='btnLogIn'
+		type='submit'
+		class='btn btn-primary btn-xs logIn'
+		ng-click='vm.submit()'>Enter
+	</button>
+</div>

@@ -1,0 +1,37 @@
+<div class='container'>
+	<button class='btn btn-default' type='button' ng-click='vm.addTask()'>Add task</button>
+<div class='container'>
+	<table class='table table-striped table-hover table-condensed table-responsive tasks'>
+		<thead>
+			<tr>
+				<th class='taskName'>
+					Name
+				</th>
+				<th class='taskManage'>
+					Manage
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat='task in vm.tasks'>
+				<td>
+					<span ng-bind='task.taskName'>
+				</td>
+				<td>
+					<!-- Edit task button -->
+					<button
+						 name='btnEditTask'
+						 class='btn btn-default btn-xs'
+						 type='button'
+						 ng-click='vm.editTask(task)'>Edit</button>
+ 					<!-- Delete task button -->
+ 					<button
+ 						 name='btnDeleteTask'
+ 						 class='btn btn-default btn-xs'
+ 						 type='button'
+ 						 ng-click='vm.deleteTask(task)'>Delete</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

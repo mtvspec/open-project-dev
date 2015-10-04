@@ -8,5 +8,8 @@
 /node_modules/cookie-parser
 /node_modules/body-parser
 /node_modules/.bin
+/node_modules/bcrypt
+/node_modules/bcrypt-nodejs
+/public/lib/bower_components
 /open-project.iml
 .idea/

@@ -1,0 +1,6 @@
+table.tasks th.taskName {
+	width: 91%;
+}
+table.tasks th.taskManage {
+	width: 100px;
+}

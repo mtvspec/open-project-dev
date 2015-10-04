@@ -1,0 +1,21 @@
+<div class='modal-header'>
+	<h4 class='modal-title'>Delete task</h4>
+</div>
+<div class='modal-body'>
+	<form name='vm.taskDeleteForm' class='form'>
+		<div class='form-group'>
+			<label>
+				Delete this task?
+			</label>
+			<span
+				name='fldTaskName'
+				class='form-control'
+				ng-bind='vm.taskToDelete.taskName'
+				placeholder='Name'></span>
+		</div>
+	</form>
+</div>
+<div class='modal-footer'>
+	<button class='btn btn-primary' type='submit' ng-click='vm.submit()'>Delete task</button>
+	<button class='btn btn-default' type='button' ng-click='$dismiss()'>Cancel</button>
+</div>
